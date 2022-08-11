@@ -4,6 +4,7 @@ import 'package:flutter_study_scrollable_widget/screen/custom_scroll_view_screen
 import 'package:flutter_study_scrollable_widget/screen/grid_view_screen.dart';
 import 'package:flutter_study_scrollable_widget/screen/list_view_screen.dart';
 import 'package:flutter_study_scrollable_widget/screen/reorderable_list_view_screen.dart';
+import 'package:flutter_study_scrollable_widget/screen/scrollbar_screen.dart';
 import 'package:flutter_study_scrollable_widget/screen/single_child_scroll_view_screen.dart';
 
 class ScreenModel {
@@ -26,6 +27,7 @@ class HomeScreen extends StatelessWidget {
     ScreenModel(
         builder: (_) => CustomScrollViewScreen(),
         name: "CustomScrollViewScreen"),
+    ScreenModel(builder: (_) => ScrollbarScreen(), name: "ScrollbarScreen"),
   ];
 
   HomeScreen({Key? key}) : super(key: key);
