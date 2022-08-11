@@ -3,6 +3,7 @@ import 'package:flutter_study_scrollable_widget/layout/main_layout.dart';
 import 'package:flutter_study_scrollable_widget/screen/custom_scroll_view_screen.dart';
 import 'package:flutter_study_scrollable_widget/screen/grid_view_screen.dart';
 import 'package:flutter_study_scrollable_widget/screen/list_view_screen.dart';
+import 'package:flutter_study_scrollable_widget/screen/refresh_indicator.dart';
 import 'package:flutter_study_scrollable_widget/screen/reorderable_list_view_screen.dart';
 import 'package:flutter_study_scrollable_widget/screen/scrollbar_screen.dart';
 import 'package:flutter_study_scrollable_widget/screen/single_child_scroll_view_screen.dart';
@@ -28,6 +29,8 @@ class HomeScreen extends StatelessWidget {
         builder: (_) => CustomScrollViewScreen(),
         name: "CustomScrollViewScreen"),
     ScreenModel(builder: (_) => ScrollbarScreen(), name: "ScrollbarScreen"),
+    ScreenModel(
+        builder: (_) => RefreshIndicatorScreen(), name: "RefreshIndicator"),
   ];
 
   HomeScreen({Key? key}) : super(key: key);
